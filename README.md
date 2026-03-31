@@ -2,11 +2,16 @@
 
 A simple website built with Bootstrap 5 to showcase useful AI tools.
 
+---
+
 ## 📋 Project Overview
 
-This project is my submission for the Bootstrap 5 Internship Task. I created a responsive multi-page website called **"AI Tools Hub"** that lists AI tools I found useful.
+This project is my submission for the Bootstrap 5 Internship Task.
+It is a responsive multi-page website that lists useful AI tools.
 
-### 🌐 Live Demo
+---
+
+## 🌐 Live Demo
 
 **Live Link:** https://ai-tools-hub1.vercel.app
 
@@ -14,28 +19,28 @@ This project is my submission for the Bootstrap 5 Internship Task. I created a r
 
 ## 📁 Pages Included
 
-* **Home (`index.html`)** – Hero section, search bar, category filters, and tool cards
-* **About (`about.html`)** – Overview of the project and its purpose
-* **Contact (`contact.html`)** – Simple contact form with basic validation
+* **Home (`index.html`)** – Hero section, search bar, filters, and tool cards
+* **About (`about.html`)** – Project overview and purpose
+* **Contact (`contact.html`)** – Contact form with basic validation
 
 ---
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * Bootstrap 5 (via CDN)
 * Bootstrap Icons
-* JavaScript (for search, filter, and form handling)
+* JavaScript (search, filter, form handling)
 
 ---
 
 ## ✨ Features
 
 * Responsive design (mobile, tablet, desktop)
-* Search functionality to find tools quickly
-* Category filter buttons (Writing, Coding, Design)
-* Card layout with hover effects
+* Search functionality
+* Category filters (Writing, Coding, Design)
+* Card-based layout with hover effects
 * Sticky navigation bar
 * Clean hero section
 * Contact form with success message
@@ -46,47 +51,50 @@ This project is my submission for the Bootstrap 5 Internship Task. I created a r
 
 ### How I built this project
 
-I started by going through the Bootstrap 5 documentation and example components to understand how they work. Instead of copying a full template, I picked useful components like navbar, cards, and forms, and combined them to build my own layout.
+I started by exploring Bootstrap documentation and example components to understand how they work.
+Instead of copying full templates, I selected useful components and combined them to build my own layout.
 
-**Steps I followed:**
+**Steps followed:**
 
-1. Created the basic layout and navigation bar
-2. Designed the hero section
+1. Created the navigation bar
+2. Designed the Home page layout
 3. Built the tools section using cards
 4. Added search and filter using JavaScript
 5. Created About and Contact pages
-6. Improved spacing and styling using custom CSS
+6. Improved layout using custom CSS
 
 ---
 
-### Did I use AI tools?
+### Use of AI Tools
 
-Yes, I used **Grok (by xAI)** to help fix issues and clean up my code. I also referred to Bootstrap documentation regularly. The overall structure and content were written and customized by me.
+I used AI tools like ChatGPT and Grok for guidance and debugging.
+I also referred to Bootstrap documentation.
+The overall structure and implementation were done by me.
 
 ---
 
-### Challenges faced
+### Challenges Faced
 
 * Getting search and filter to work properly together
-* Maintaining consistent design across all pages
-* Making the UI look clean without overcomplicating it
+* Maintaining consistent design across pages
+* Keeping the UI simple and clean
 
-Some parts took longer than expected, especially debugging the JavaScript.
+Some parts took longer than expected, especially getting the search and filter to work correctly.
 
 ---
 
-### What I learned
+### What I Learned
 
 * How to use Bootstrap components effectively
 * How to build responsive layouts
 * How to combine HTML, CSS, and JavaScript
-* Importance of keeping the UI simple and clear
+* Importance of clean UI design
 
 ---
 
-### Time taken
+### Time Taken
 
-Around 7 Hours
+Approximately **20–22 hours**
 
 ---
 
@@ -94,7 +102,7 @@ Around 7 Hours
 
 1. Clone the repository
 2. Open `index.html` in your browser
-3. No installation needed (uses CDN)
+3. No installation required (uses CDN)
 
 ---
 
