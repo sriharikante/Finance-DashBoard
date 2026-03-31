@@ -15,14 +15,52 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* CARD IMAGE */
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SEARCH BAR */
+#searchInput {
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+/* FILTER BUTTON */
+.filter-btn.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* FAVORITE BUTTON */
+.favorite-btn.saved {
+  background-color: #dc3545;
+  color: white;
 }
 
 /* CATEGORY BOX */
 .border {
   transition: all 0.3s ease;
 }
+
 .border:hover {
   background-color: #e9ecef;
   cursor: pointer;
