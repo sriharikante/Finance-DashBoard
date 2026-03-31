@@ -111,7 +111,8 @@
           Turn text into stunning AI-generated images in seconds.
         </p>
         <span class="badge bg-success">New</span><br>
-        <a href="#" class="btn btn-sm btn-primary mt-2">Visit Tool</a>
+        <a href="https://www.midjourney.com" target="_blank"
+           class="btn btn-sm btn-primary mt-2">Visit Tool</a>
         <button class="btn btn-outline-danger btn-sm favorite-btn mt-2">
           ❤️ Save
         </button>
@@ -131,7 +132,8 @@
           Write and debug code faster with AI assistance.
         </p>
         <span class="badge bg-warning text-dark">Trending</span><br>
-        <a href="#" class="btn btn-sm btn-primary mt-2">Visit Tool</a>
+        <a href="https://github.com/features/copilot" target="_blank"
+           class="btn btn-sm btn-primary mt-2">Visit Tool</a>
         <button class="btn btn-outline-danger btn-sm favorite-btn mt-2">
           ❤️ Save
         </button>
@@ -151,7 +153,8 @@
           Create stunning designs and presentations easily.
         </p>
         <span class="badge bg-primary">Popular</span><br>
-        <a href="#" class="btn btn-sm btn-primary mt-2">Visit Tool</a>
+        <a href="https://www.canva.com" target="_blank"
+           class="btn btn-sm btn-primary mt-2">Visit Tool</a>
         <button class="btn btn-outline-danger btn-sm favorite-btn mt-2">
           ❤️ Save
         </button>
@@ -171,7 +174,8 @@
           Organize notes, manage tasks, and write smarter.
         </p>
         <span class="badge bg-success">New</span><br>
-        <a href="#" class="btn btn-sm btn-primary mt-2">Visit Tool</a>
+        <a href="https://www.notion.so/product/ai" target="_blank"
+           class="btn btn-sm btn-primary mt-2">Visit Tool</a>
         <button class="btn btn-outline-danger btn-sm favorite-btn mt-2">
           ❤️ Save
         </button>
@@ -191,7 +195,8 @@
           Improve grammar, clarity, and tone instantly.
         </p>
         <span class="badge bg-warning text-dark">Trending</span><br>
-        <a href="#" class="btn btn-sm btn-primary mt-2">Visit Tool</a>
+        <a href="https://www.grammarly.com" target="_blank"
+           class="btn btn-sm btn-primary mt-2">Visit Tool</a>
         <button class="btn btn-outline-danger btn-sm favorite-btn mt-2">
           ❤️ Save
         </button>
@@ -218,7 +223,6 @@
 <!-- SCRIPT -->
 
 <script>
-  // SEARCH
   const searchInput = document.getElementById("searchInput");
 
   searchInput.addEventListener("keyup", function () {
@@ -231,7 +235,6 @@
     });
   });
 
-  // FILTER
   const buttons = document.querySelectorAll(".filter-btn");
 
   buttons.forEach(btn => {
@@ -252,7 +255,6 @@
     });
   });
 
-  // FAVORITES
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
   document.querySelectorAll(".favorite-btn").forEach(btn => {
