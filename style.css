@@ -1,0 +1,179 @@
+/* ─────────────────────────────────────────────
+   style.css — Personal Finance Dashboard
+   Custom styles on top of Bootstrap 5
+───────────────────────────────────────────── */
+
+
+/* ─── GLOBAL ─────────────────────────────── */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  background-color: #f5f6fa;
+  color: #2d2d2d;
+}
+
+
+/* ─── NAVBAR ─────────────────────────────── */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ─── SIDEBAR ────────────────────────────── */
+#sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #1e2a38;
+  color: #fff;
+  flex-shrink: 0;
+  border-right: 1px solid #2c3e50;
+}
+
+#sidebar .sidebar-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6c757d;
+  padding: 20px 20px 8px;
+}
+
+#sidebar a {
+  color: #adb5bd;
+  text-decoration: none;
+  display: block;
+  border-radius: 6px;
+  margin: 2px 10px;
+  padding: 9px 14px;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease;
+}
+
+#sidebar a:hover,
+#sidebar a.active {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+
+/* ─── MAIN CONTENT ───────────────────────── */
+#main-content {
+  flex-grow: 1;
+  padding: 24px;
+}
+
+
+/* ─── CARDS ──────────────────────────────── */
+
+/* spent way too long getting this shadow right */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.card h6 {
+  font-size: 0.9rem;
+  color: #2d2d2d;
+}
+
+
+/* ─── FORM CONTROLS ──────────────────────── */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #1e2a38;
+  box-shadow: 0 0 0 3px rgba(30, 42, 56, 0.10);
+}
+
+
+/* ─── BUTTON ─────────────────────────────── */
+.btn-dark {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  letter-spacing: 0.3px;
+}
+
+.btn-dark:hover {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+
+/* ─── TABLE ──────────────────────────────── */
+.table td,
+.table th {
+  padding: 12px 14px;
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* ─── BADGES ─────────────────────────────── */
+.badge {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.78rem;
+  padding: 4px 10px;
+}
+
+
+/* ─── UTILITY ────────────────────────────── */
+.text-muted {
+  color: #7a8a9a !important;
+}
+
+
+/* ─── MOBILE ─────────────────────────────── */
+@media (max-width: 768px) {
+
+  #sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #2c3e50;
+  }
+
+  #sidebar a {
+    display: inline-block;
+    width: auto;
+  }
+
+  .table td,
+  .table th {
+    font-size: 0.82rem;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  #main-content {
+    padding: 14px;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+}

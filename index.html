@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Finance Tracker — Alex</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <span class="navbar-brand fw-semibold">💰 FinanceTracker</span>
+    <div class="d-flex align-items-center gap-3">
+      <span class="text-white-50 small">Hi, Alex 👋</span>
+      <img
+        src="https://i.pravatar.cc/32"
+        alt="User Avatar"
+        class="rounded-circle"
+        width="32" height="32"
+      />
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE SIDEBAR TOGGLE ─────────────── -->
+  <button
+    class="btn btn-dark d-md-none m-2"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#sidebar"
+  >
+    ☰ Menu
+  </button>
+
+  <!-- ─── WRAPPER: Sidebar + Main ───────────── -->
+  <div class="d-flex">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="collapse d-md-block">
+      <div class="sidebar-title">Menu</div>
+      <a href="#" class="active">🏠 Dashboard</a>
+      <a href="#">💳 Transactions</a>
+      <a href="#">Budget</a>
+      <a href="#">🎯 Goals</a>
+
+      <div class="sidebar-title mt-3">Account</div>
+      <a href="#">⚙️ Settings</a>
+      <a href="#">🚪 Logout</a>
+    </div>
+
+    <!-- ─── MAIN CONTENT ───────────────────── -->
+    <div id="main-content">
+      <h5 class="text-muted mb-4">Dashboard Overview</h5>
+
+      <!-- SUMMARY CARDS -->
+      <div class="row g-3 mb-4">
+
+        <!-- Total Balance -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fs-4 me-2">🏦</span>
+                <span class="text-muted small">Total Balance</span>
+              </div>
+              <h4 class="fw-bold mb-0">$11,847.63</h4>
+              <small class="text-success">↑ 3.2% this month</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Income -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fs-4 me-2">💵</span>
+                <span class="text-muted small">Monthly Income</span>
+              </div>
+              <h4 class="fw-bold mb-0">$3,850.00</h4>
+              <small class="text-success">↑ 1.8% vs last month</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expenses -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fs-4 me-2">🛒</span>
+                <span class="text-muted small">Monthly Expenses</span>
+              </div>
+              <h4 class="fw-bold mb-0">$2,314.58</h4>
+              <small class="text-danger">↑ 5.1% vs last month</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Savings -->
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card border-0 h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fs-4 me-2">🐷</span>
+                <span class="text-muted small">Savings</span>
+              </div>
+              <h4 class="fw-bold mb-0">$892.45</h4>
+              <small class="text-muted">Goal: $2,000</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END SUMMARY CARDS -->
+
+      <!-- RECENT TRANSACTIONS -->
+      <div class="card border-0 mb-4">
+        <div class="card-body">
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="fw-semibold mb-0">Recent Transactions</h6>
+            <a href="#" class="small text-decoration-none">View All</a>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+
+              <thead class="table-light">
+                <tr>
+                  <th class="fw-semibold small">Date</th>
+                  <th class="fw-semibold small">Description</th>
+                  <th class="fw-semibold small">Amount</th>
+                  <th class="fw-semibold small">Type</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="text-muted small">Mar 28, 2026</td>
+                  <td>Salary deposit</td>
+                  <td class="text-success fw-semibold">+ $3,850.00</td>
+                  <td><span class="badge bg-success-subtle text-success border border-success-subtle">Income</span></td>
+                </tr>
+                <tr>
+                  <td class="text-muted small">Mar 26, 2026</td>
+                  <td>D-Mart — monthly groceries</td>
+                  <td class="text-danger fw-semibold">- $91.30</td>
+                  <td><span class="badge bg-danger-subtle text-danger border border-danger-subtle">Expense</span></td>
+                </tr>
+                <tr>
+                  <td class="text-muted small">Mar 24, 2026</td>
+                  <td>Netflix subscription</td>
+                  <td class="text-danger fw-semibold">- $15.00</td>
+                  <td><span class="badge bg-danger-subtle text-danger border border-danger-subtle">Expense</span></td>
+                </tr>
+                <tr>
+                  <td class="text-muted small">Mar 22, 2026</td>
+                  <td>Razorpay transfer from client</td>
+                  <td class="text-success fw-semibold">+ $650.00</td>
+                  <td><span class="badge bg-success-subtle text-success border border-success-subtle">Income</span></td>
+                </tr>
+                <tr>
+                  <td class="text-muted small">Mar 20, 2026</td>
+                  <td>APSPDCL electricity bill</td>
+                  <td class="text-danger fw-semibold">- $118.75</td>
+                  <td><span class="badge bg-danger-subtle text-danger border border-danger-subtle">Expense</span></td>
+                </tr>
+                <tr>
+                  <td class="text-muted small">Mar 18, 2026</td>
+                  <td>Freelance project payment</td>
+                  <td class="text-success fw-semibold">+ $200.00</td>
+                  <td><span class="badge bg-success-subtle text-success border border-success-subtle">Income</span></td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
+        </div>
+      </div>
+      <!-- END RECENT TRANSACTIONS -->
+
+      <!-- ADD TRANSACTION FORM -->
+      <div class="card border-0 mb-4">
+        <div class="card-body">
+
+          <h6 class="fw-semibold mb-3">Add New Transaction</h6>
+
+          <!-- TODO: connect this form to backend later -->
+          <div class="row g-3">
+
+            <!-- Title -->
+            <div class="col-12 col-md-6">
+              <label class="form-label small fw-semibold">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="e.g. Grocery Shopping"
+              />
+            </div>
+
+            <!-- Amount -->
+            <div class="col-12 col-md-6">
+              <label class="form-label small fw-semibold">Amount ($)</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="e.g. 150.00"
+                min="0"
+              />
+            </div>
+
+            <!-- Category -->
+            <div class="col-12 col-md-6">
+              <label class="form-label small fw-semibold">Category</label>
+              <select class="form-select">
+                <option value="" disabled selected>Select a category</option>
+                <option>Food & Groceries</option>
+                <option>Rent & Housing</option>
+                <option>Transport</option>
+                <option>Entertainment</option>
+                <option>Healthcare</option>
+                <option>Salary</option>
+                <option>Freelance</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <!-- Date -->
+            <div class="col-12 col-md-6">
+              <label class="form-label small fw-semibold">Date</label>
+              <input type="date" class="form-control"/>
+            </div>
+
+            <!-- Type -->
+            <div class="col-12">
+              <label class="form-label small fw-semibold">Type</label>
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="transactionType"
+                    id="typeIncome"
+                    value="income"
+                  />
+                  <label class="form-check-label small" for="typeIncome">Income</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="transactionType"
+                    id="typeExpense"
+                    value="expense"
+                    checked
+                  />
+                  <label class="form-check-label small" for="typeExpense">Expense</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="col-12">
+              <button type="button" class="btn btn-dark px-4">
+                + Add Transaction
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- END ADD TRANSACTION FORM -->
+
+      <!-- placeholder for charts -->
+      <div class="text-center text-muted py-4 small">
+        📈 Charts coming soon — still working on this part
+      </div>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+  </div>
+  <!-- END WRAPPER -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
