@@ -8,6 +8,8 @@ A simple website built with Bootstrap 5 to showcase useful AI tools.
 
 ### Hero Section
 <img src="https://github.com/user-attachments/assets/9758584a-fe15-432c-9a11-638d6b2c0670" width="800">
+
+---
 ## 📋 Project Overview
 
 This project is my submission for the Bootstrap 5 Internship Task.
