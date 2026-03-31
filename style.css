@@ -1,196 +1,41 @@
-/* ─────────────────────────────────────────────
-   style.css — Improved Finance Dashboard UI
-───────────────────────────────────────────── */
-
-
-/* ─── GLOBAL ─────────────────────────────── */
 body {
+  background: #f4f6f9;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
-  background-color: #f4f6f9;
-  color: #2d2d2d;
 }
 
-
-/* ─── NAVBAR ─────────────────────────────── */
-.navbar {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-
-/* ─── SIDEBAR ────────────────────────────── */
 #sidebar {
-  width: 220px;
+  width: 200px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #1e2a38, #17212b);
-  color: #fff;
-  border-right: 1px solid #2c3e50;
-  transition: all 0.2s ease;
-}
-
-#sidebar .sidebar-title {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #8899a6;
-  padding: 18px 20px 6px;
 }
 
 #sidebar a {
-  color: #adb5bd;
-  text-decoration: none;
   display: block;
-  border-radius: 8px;
-  margin: 4px 10px;
-  padding: 10px 14px;
-  font-size: 0.92rem;
-  transition: all 0.2s ease;
+  padding: 8px;
+  margin: 5px 0;
+  color: #555;
+  text-decoration: none;
 }
 
+#sidebar a.active,
 #sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.06);
-  color: #fff;
-  transform: translateX(3px);
+  background: #e9ecef;
+  border-radius: 6px;
 }
 
-#sidebar a.active {
-  background-color: #2c3e50;
-  color: #fff;
-  font-weight: 500;
-}
-
-
-/* ─── MAIN CONTENT ───────────────────────── */
-#main-content {
-  flex-grow: 1;
-  padding: 24px;
-}
-
-
-/* ─── CARDS ─────────────────────────────── */
 .card {
   border-radius: 12px;
   border: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
-.card small {
-  color: #7a8a9a;
-  letter-spacing: 0.2px;
-}
-
-.card h5 {
-  font-size: 1.2rem;
-}
-
-
-/* ─── FORM CONTROLS ─────────────────────── */
-.form-control,
-.form-select {
+.btn {
   border-radius: 8px;
-  border: 1px solid #e2e6ea;
-  font-size: 0.9rem;
-  padding: 9px 12px;
-  transition: all 0.2s ease;
 }
 
-.form-control:focus,
-.form-select:focus {
-  border-color: #1e2a38;
-  box-shadow: 0 0 0 3px rgba(30, 42, 56, 0.08);
-}
-
-
-/* ─── BUTTON ───────────────────────────── */
-.btn-dark {
-  border-radius: 8px;
-  font-size: 0.9rem;
-  padding: 8px 22px;
-  transition: all 0.2s ease;
-}
-
-.btn-dark:hover {
-  background-color: #2c3e50;
-  transform: translateY(-1px);
-}
-
-
-/* ─── TABLE ────────────────────────────── */
-.table td,
-.table th {
-  padding: 12px 14px;
+.table td {
   vertical-align: middle;
-}
-
-.table tbody tr {
-  transition: background 0.15s ease;
-}
-
-.table tbody tr:hover {
-  background-color: #f8f9fb;
-}
-
-.table thead {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-
-/* ─── BADGES ───────────────────────────── */
-.badge {
-  border-radius: 6px;
-  font-weight: 500;
-  font-size: 0.75rem;
-  padding: 4px 10px;
-}
-
-
-/* ─── UTILITIES ────────────────────────── */
-.text-muted {
-  color: #7a8a9a !important;
-}
-
-
-/* ─── MOBILE ───────────────────────────── */
-@media (max-width: 768px) {
-
-  #sidebar {
-    width: 100%;
-    min-height: auto;
-    border-right: none;
-    border-bottom: 1px solid #2c3e50;
-  }
-
-  #sidebar a {
-    display: inline-block;
-  }
-
-  .table td,
-  .table th {
-    font-size: 0.82rem;
-    padding: 10px;
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 576px) {
-
-  #main-content {
-    padding: 14px;
-  }
-
-  .card-body {
-    padding: 14px;
-  }
-
-  .card h5 {
-    font-size: 1.1rem;
-  }
 }
