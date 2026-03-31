@@ -2,21 +2,13 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Tools Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools Hub</title>
 
-  <!-- Bootstrap -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-  <!-- CSS -->
-
-  <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,175 +16,186 @@
 <!-- NAVBAR -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">AI Tools Hub</a>
+<div class="container">
+<a class="navbar-brand" href="#">AI Tools Hub</a>
 
-    
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-  <span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="nav">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-  </ul>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
 
-  <button id="darkToggle" class="btn btn-outline-light ms-3">🌙</button>
+<button id="darkToggle" class="btn btn-outline-light ms-3">🌙</button>
+
 </div>
-
-
-  </div>
+</div>
 </nav>
 
 <!-- HERO -->
 
 <section class="text-center py-4">
-  <h2>Discover AI Tools That Save Your Time</h2>
+<h2>Discover AI Tools That Save Your Time</h2>
 </section>
 
 <!-- SEARCH -->
 
 <div class="container mb-4">
-  <input type="text" id="searchInput" class="form-control" placeholder="Search AI tools...">
+<input type="text" id="searchInput" class="form-control" placeholder="Search AI tools...">
 </div>
 
 <!-- FILTER -->
 
 <div class="text-center mb-4">
-  <button class="btn btn-primary filter-btn active" data-category="all">All</button>
-  <button class="btn btn-outline-primary filter-btn" data-category="writing">Writing</button>
-  <button class="btn btn-outline-primary filter-btn" data-category="coding">Coding</button>
-  <button class="btn btn-outline-primary filter-btn" data-category="design">Design</button>
+<button class="btn btn-primary filter-btn active" data-category="all">All</button>
+<button class="btn btn-outline-primary filter-btn" data-category="writing">Writing</button>
+<button class="btn btn-outline-primary filter-btn" data-category="coding">Coding</button>
+<button class="btn btn-outline-primary filter-btn" data-category="design">Design</button>
 </div>
 
 <!-- TOOLS -->
 
 <div class="container">
-  <div class="row g-4">
+<div class="row g-4">
 
+<!-- CARD TEMPLATE -->
 
-<!-- ChatGPT -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="writing">
-    <i class="bi bi-chat-dots-fill text-primary icon-big"></i>
-    <h5>ChatGPT</h5>
-    <p>Generate content and solve problems faster.</p>
-    <a href="https://chat.openai.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="writing">
+<i class="bi bi-chat-dots-fill icon-big text-info"></i>
+<h5>ChatGPT</h5>
+<p>Generate content and solve problems faster.</p>
+
+<div class="d-flex justify-content-center gap-2">
+<a href="https://chat.openai.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- Midjourney -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="design">
-    <i class="bi bi-palette-fill text-success icon-big"></i>
-    <h5>Midjourney</h5>
-    <p>Create AI-generated images instantly.</p>
-    <a href="https://www.midjourney.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="design">
+<i class="bi bi-palette-fill icon-big text-success"></i>
+<h5>Midjourney</h5>
+<p>Create AI-generated images instantly.</p>
+
+<div class="d-flex justify-content-center gap-2">
+<a href="https://www.midjourney.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- Copilot -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="coding">
-    <i class="bi bi-code-slash text-warning icon-big"></i>
-    <h5>GitHub Copilot</h5>
-    <p>Write and debug code faster with AI.</p>
-    <a href="https://github.com/features/copilot" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="coding">
+<i class="bi bi-code-slash icon-big text-warning"></i>
+<h5>GitHub Copilot</h5>
+<p>Write and debug code faster with AI.</p>
+
+<div class="d-flex justify-content-center gap-2">
+<a href="https://github.com/features/copilot" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- Canva -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="design">
-    <i class="bi bi-brush-fill text-primary icon-big"></i>
-    <h5>Canva AI</h5>
-    <p>Create stunning designs easily.</p>
-    <a href="https://www.canva.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="design">
+<i class="bi bi-brush-fill icon-big text-danger"></i>
+<h5>Canva AI</h5>
+<p>Create stunning designs easily.</p>
+
+<div class="d-flex justify-content-center gap-2">
+<a href="https://www.canva.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- Notion -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="writing">
-    <i class="bi bi-journal-text text-success icon-big"></i>
-    <h5>Notion AI</h5>
-    <p>Organize tasks and write smarter.</p>
-    <a href="https://www.notion.so/product/ai" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="writing">
+<i class="bi bi-journal-text icon-big text-primary"></i>
+<h5>Notion AI</h5>
+<p>Organize tasks and write smarter.</p>
+
+<div class="d-flex justify-content-center gap-2">
+<a href="https://www.notion.so/product/ai" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- Grammarly -->
-<div class="col-md-4 col-sm-6">
-  <div class="card p-3 text-center" data-category="writing">
-    <i class="bi bi-pencil-fill text-warning icon-big"></i>
-    <h5>Grammarly</h5>
-    <p>Improve grammar and clarity instantly.</p>
-    <a href="https://www.grammarly.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
-    <button class="btn btn-outline-danger btn-sm mt-2 favorite-btn">❤️</button>
-  </div>
-</div>
-```
+<div class="col-md-4 col-sm-6 tool-col">
+<div class="card text-center" data-category="writing">
+<i class="bi bi-pencil-fill icon-big text-success"></i>
+<h5>Grammarly</h5>
+<p>Improve grammar and clarity instantly.</p>
 
-  </div>
+<div class="d-flex justify-content-center gap-2">
+<a href="https://www.grammarly.com" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+<button class="btn btn-outline-danger btn-sm favorite-btn">❤️</button>
+</div>
+</div>
 </div>
 
-<!-- FOOTER -->
+</div>
+</div>
 
 <footer class="text-center py-4 bg-dark text-white mt-5">
-  <p>© 2026 AI Tools Hub</p>
+<p>© 2026 AI Tools Hub</p>
 </footer>
-
-<!-- JS -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  // SEARCH
-  document.getElementById("searchInput").addEventListener("keyup", function () {
-    let val = this.value.toLowerCase();
-    document.querySelectorAll(".card").forEach(card => {
-      card.style.display = card.innerText.toLowerCase().includes(val) ? "" : "none";
-    });
-  });
+/* SEARCH */
+document.getElementById("searchInput").onkeyup = function () {
+let val = this.value.toLowerCase();
+document.querySelectorAll(".tool-col").forEach(col => {
+col.style.display = col.innerText.toLowerCase().includes(val) ? "block" : "none";
+});
+};
 
-  // FILTER
-  document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.onclick = () => {
-      document.querySelector(".filter-btn.active").classList.remove("active");
-      btn.classList.add("active");
+/* FILTER */
+document.querySelectorAll(".filter-btn").forEach(btn => {
+btn.onclick = () => {
+document.querySelector(".filter-btn.active").classList.remove("active");
+btn.classList.add("active");
 
-      let cat = btn.dataset.category;
-      document.querySelectorAll(".card").forEach(card => {
-        card.style.display = (cat === "all" || card.dataset.category === cat) ? "" : "none";
-      });
-    };
-  });
+let cat = btn.dataset.category;
 
-  // FAVORITES
-  let fav = JSON.parse(localStorage.getItem("fav")) || [];
+document.querySelectorAll(".tool-col").forEach(col => {
+let card = col.querySelector(".card");
 
-  document.querySelectorAll(".favorite-btn").forEach(btn => {
-    btn.onclick = () => {
-      let name = btn.closest(".card").querySelector("h5").innerText;
-      if (!fav.includes(name)) {
-        fav.push(name);
-        localStorage.setItem("fav", JSON.stringify(fav));
-        btn.innerText = "✅";
-      }
-    };
-  });
+col.style.display =
+(cat === "all" || card.dataset.category === cat) ? "block" : "none";
+});
+};
+});
 
-  // DARK MODE
-  document.getElementById("darkToggle").onclick = () => {
-    document.body.classList.toggle("dark-mode");
-  };
+/* FAVORITES */
+let fav = JSON.parse(localStorage.getItem("fav")) || [];
+
+document.querySelectorAll(".favorite-btn").forEach(btn => {
+btn.onclick = () => {
+let name = btn.closest(".card").querySelector("h5").innerText;
+
+if (!fav.includes(name)) {
+fav.push(name);
+localStorage.setItem("fav", JSON.stringify(fav));
+btn.innerText = "✅";
+}
+};
+});
+
+/* DARK MODE */
+document.getElementById("darkToggle").onclick = () => {
+document.body.classList.toggle("dark-mode");
+};
 </script>
 
 </body>
