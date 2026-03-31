@@ -1,60 +1,33 @@
-/* ===== Base ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ===== Navbar ===== */
-.navbar-brand {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* ===== Hero Section ===== */
+/* HERO */
 .hero {
   padding: 80px 0;
   background: linear-gradient(to right, #0d6efd, #6610f2);
   color: white;
 }
 
-.hero h1 {
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.1rem;
-}
-
-/* ===== Cards ===== */
+/* CARDS */
 .card {
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
 }
 
-/* ===== Section Headings ===== */
-h2 {
-  font-weight: 600;
-}
-
-/* ===== Categories ===== */
+/* CATEGORY BOX */
 .border {
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
-
 .border:hover {
   background-color: #e9ecef;
 }
 
-/* ===== Footer ===== */
+/* FOOTER */
 footer {
   background-color: #212529;
-  color: #fff;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
+  color: white;
 }
