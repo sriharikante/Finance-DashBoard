@@ -67,7 +67,7 @@ Instead of copying full templates, I selected useful components and combined the
 
 ### Use of AI Tools
 
-I used AI tools like ChatGPT and Grok for guidance and debugging.
+I used AI tools like ChatGPT and Grok for fixing issues and making small improvements.
 I also referred to Bootstrap documentation.
 The overall structure and implementation were done by me.
 
@@ -94,7 +94,7 @@ Some parts took longer than expected, especially getting the search and filter t
 
 ### Time Taken
 
-Approximately **20–22 hours**
+Approximately **10-12 hours**
 
 ---
 
