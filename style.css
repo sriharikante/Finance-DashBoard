@@ -2,72 +2,33 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* HERO */
-.hero {
-  padding: 80px 0;
-  background: linear-gradient(to right, #0d6efd, #6610f2);
+.icon-big {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #121212;
   color: white;
 }
 
-/* CARDS */
-.card {
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-/* CARD IMAGE */
-.card-img-top {
-  height: 150px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-/* BUTTONS */
-.btn {
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* SEARCH BAR */
-#searchInput {
-  border-radius: 30px;
-  padding: 10px 20px;
-}
-
-/* FILTER BUTTON */
-.filter-btn.active {
-  background-color: #0d6efd;
+.dark-mode .card {
+  background: #1e1e1e;
   color: white;
 }
 
-/* FAVORITE BUTTON */
-.favorite-btn.saved {
-  background-color: #dc3545;
-  color: white;
+.dark-mode .navbar {
+  background: #000 !important;
 }
 
-/* CATEGORY BOX */
-.border {
-  transition: all 0.3s ease;
-}
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
 
-.border:hover {
-  background-color: #e9ecef;
-  cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-  background-color: #212529;
-  color: white;
+  .filter-btn {
+    margin: 5px;
+  }
 }
