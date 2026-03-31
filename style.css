@@ -1,6 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f7fa;
+  margin: 0;
 }
 
 /* HERO */
@@ -16,7 +17,7 @@ body {
   max-width: 500px;
 }
 
-/* FILTER BUTTONS */
+/* FILTER */
 .filter-btn {
   margin: 5px;
 }
@@ -42,10 +43,9 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* CARD CONTENT */
+/* TEXT */
 .card-title {
   font-size: 18px;
-  margin-bottom: 8px;
 }
 
 .card-text {
@@ -78,21 +78,9 @@ body {
   margin-top: 10px;
 }
 
-/* FOOTER FIX */
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  flex: 1;
-}
-
+/* FOOTER */
 footer {
   background: #212529;
   color: white;
+  text-align: center;
 }
