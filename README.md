@@ -1,96 +1,64 @@
-# 🚀 AI Tools Hub – Bootstrap 5 Project
+# 🤖 AI Tools Hub
 
-## 📌 Project Description
+AI Tools Hub is a simple and interactive web application that helps users discover useful AI tools for writing, coding, design, and more.
 
-This project is a responsive website built using Bootstrap 5.
-It is designed as an AI Tools Hub where users can explore different tools for tasks like writing, coding, and design.
+## 🚀 Live Demo
 
-The main aim of this project was to understand how Bootstrap components work and how to combine them to build a complete website.
+👉 https://aitoolhub-amber.vercel.app/index.html
 
 ---
 
-## 🛠️ Technologies Used
+## 📌 Features
+
+* 🔍 Search AI tools instantly
+* 🎯 Filter tools by category (Writing, Coding, Design)
+* ❤️ Save favorite tools using localStorage
+* 🌐 Direct links to AI tools
+* 📱 Fully responsive design using Bootstrap
+* ✅ Form validation on Contact page
+
+---
+
+## 🛠️ Tech Stack
 
 * HTML5
 * CSS3
-* Bootstrap 5 (CDN)
-* Git & GitHub
+* Bootstrap 5
+* JavaScript (Vanilla JS)
 
 ---
 
-## 📂 Project Files
+## 📂 Project Structure
 
-* `index.html` – Home page
-* `about.html` – About page
-* `contact.html` – Contact page
-* `style.css` – Custom styles
-
----
-
-## 🎯 Development Process
-
-* Started by reading Bootstrap documentation and examples
-* Created a basic layout using container, rows, and columns
-* Built a navigation bar for all pages
-* Designed the Home page with:
-
-  * Hero section
-  * Tool cards
-  * Categories
-* Created About page with simple feature sections
-* Developed Contact page with a form and validation
-* Added small CSS changes for better appearance
-* Tested the website on different screen sizes
+AI-Tools-Hub/
+│── index.html
+│── about.html
+│── contact.html
+│── style.css
 
 ---
 
-## 🤖 Use of AI Tools
+## 💡 Key Highlights
 
-I used AI tools for guidance while building the project, mainly to:
-
-* Understand some Bootstrap concepts
-* Fix small errors
-* Get ideas for structuring sections
-
-All pages and code were written and adjusted by me based on my understanding.
+* Built a clean and user-friendly UI using Bootstrap
+* Implemented search and filtering functionality
+* Added localStorage feature to save user favorites
+* Designed responsive layout for all devices
 
 ---
 
-## ⚠️ Challenges Faced
+## 🎯 Purpose
 
-* Managing layout properly using Bootstrap grid
-* Making the design responsive on mobile devices
-* Keeping the design simple but clean
-
-### Solution:
-
-I solved these by testing frequently and referring to Bootstrap documentation.
+This project was created as part of an internship task to demonstrate front-end development skills and UI/UX understanding.
 
 ---
 
-## 📈 What I Learned
+## 📬 Contact
 
-* How Bootstrap grid system works
-* How to build multi-page websites
-* Importance of spacing and layout
-* Writing clean and organized code
+If you have any feedback or suggestions, feel free to reach out!
 
 ---
 
-## ⏱️ Time Taken
+## ⭐ Acknowledgement
 
-Around **6 to 8 hours** to complete the project.
-
----
-
-## 🔗 Links
-
-* GitHub Repository: (Add your link)
-* Live Website: (Add your link)
-
----
-
-## ✅ Conclusion
-
-This project helped me improve my understanding of Bootstrap and responsive design.
-I focused on keeping the layout simple, clean, and functional while combining different components effectively.
+This project was built with the help of online resources and AI tools for guidance, while the implementation and customization were done independently.
