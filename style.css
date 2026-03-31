@@ -1,97 +1,57 @@
 body {
-font-family: 'Segoe UI', sans-serif;
-background-color: #f8f9fa;
-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
 }
 
-/* NAVBAR */
-.navbar {
-transition: all 0.3s ease;
-}
-
-/* HERO */
-section h2 {
-font-weight: 600;
-}
-
-/* CARDS */
+/* CARD */
 .card {
-border-radius: 10px;
-border: none;
-transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
 }
 
 .card:hover {
-transform: translateY(-5px);
-box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ICON SIZE (IMPORTANT FIX) */
+/* ICON */
 .icon-big {
-font-size: 18px;
-margin-bottom: 8px;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 /* TEXT */
 .card h5 {
-font-size: 16px;
-margin-top: 5px;
+  font-size: 16px;
 }
 
 .card p {
-font-size: 14px;
-color: #555;
+  font-size: 13px;
+  color: #666;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
-font-size: 13px;
-border-radius: 6px;
+  font-size: 13px;
+  border-radius: 6px;
 }
 
-/* SEARCH */
-#searchInput {
-border-radius: 25px;
-padding: 10px;
-}
-
-/* FOOTER */
-footer {
-background-color: #212529;
-color: white;
-}
-
-/* ---------------- DARK MODE ---------------- */
-
+/* DARK MODE */
 .dark-mode {
-background-color: #121212;
-color: #fff;
+  background: #121212;
+  color: white;
 }
 
 .dark-mode .card {
-background-color: #1e1e1e;
-color: #fff;
+  background: #1e1e1e;
 }
 
 .dark-mode .card p {
-color: #bbb;
+  color: #bbb;
 }
 
 .dark-mode .navbar {
-background-color: #000 !important;
-}
-
-.dark-mode #searchInput {
-background-color: #1e1e1e;
-color: #fff;
-border: 1px solid #333;
-}
-
-.dark-mode .btn-outline-primary {
-color: #fff;
-border-color: #fff;
-}
-
-.dark-mode footer {
-background-color: #000;
+  background: #000 !important;
 }
