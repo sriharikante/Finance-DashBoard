@@ -6,11 +6,10 @@ A simple website built with Bootstrap 5 to showcase useful AI tools.
 ## 📸 Preview
 
 ### Home Page
-![Home]("C:\Users\hp\Pictures\Screenshots\Screenshot 2026-03-31 195841.png")
+![Home](<img width="1888" height="911" alt="Screenshot 2026-03-31 195841" src="https://github.com/user-attachments/assets/f218b09a-2fcd-48c7-8dc1-63c4db6a07c2" />)
 
 ### Hero Section
-![Hero](hero.png)
-
+![Hero](<img width="1891" height="902" alt="Screenshot 2026-03-31 195929" src="https://github.com/user-attachments/assets/9758584a-fe15-432c-9a11-638d6b2c0670" />)
 
 ## 📋 Project Overview
 
