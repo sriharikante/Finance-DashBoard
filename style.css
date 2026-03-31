@@ -1,25 +1,20 @@
-.card {
-  border-radius: 12px;
-}
-
-.card i {
-  font-size: 26px;
-}
+/* GLOBAL */
 html, body {
   height: 100%;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f7fa;
   margin: 0;
-
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
+
 main {
   flex: 1;
 }
+
 /* HERO */
 .hero {
   padding: 70px 0;
@@ -36,6 +31,7 @@ main {
 /* FILTER */
 .filter-btn {
   margin: 5px;
+  border-radius: 20px;
 }
 
 .filter-btn.active {
@@ -45,33 +41,35 @@ main {
 
 /* CARDS */
 .card {
-  border-radius: 12px;
-  padding: 15px;
-  transition: all 0.3s ease;
+  border-radius: 14px;
+  padding: 16px;
+  transition: all 0.25s ease;
   border: none;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   height: 100%;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* TEXT */
+/* CARD TEXT */
 .card-title {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
 .card-text {
-  font-size: 14px;
-  color: #555;
+  font-size: 13.5px;
+  color: #666;
 }
 
 /* ICON */
 .card i {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
@@ -79,18 +77,25 @@ main {
 .btn {
   font-size: 13px;
   border-radius: 6px;
+  padding: 5px 10px;
 }
 
 .favorite-btn {
   border: 1px solid #dc3545;
   color: #dc3545;
+  transition: 0.2s;
+}
+
+.favorite-btn:hover {
+  background: #dc3545;
+  color: white;
 }
 
 /* BUTTON GROUP */
 .card-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   margin-top: 10px;
 }
 
@@ -99,4 +104,11 @@ footer {
   background: #212529;
   color: white;
   text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+/* SMALL IMPROVEMENT */
+h1, h2 {
+  font-weight: 600;
 }
