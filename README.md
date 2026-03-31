@@ -1,107 +1,96 @@
-# Personal Finance Dashboard 💰
+# 🚀 AI Tools Hub – Bootstrap 5 Project
 
-A front-end UI project I built while learning Bootstrap 5.
-It's not connected to any backend — just HTML, CSS and Bootstrap for now.
+## 📌 Project Description
 
----
+This project is a responsive website built using Bootstrap 5.
+It is designed as an AI Tools Hub where users can explore different tools for tasks like writing, coding, and design.
 
-## What is this?
-
-This is a simple dashboard where you can see your income, expenses, savings
-and recent transactions — all in one place. I made this as a practice project
-to get better at Bootstrap layout and responsive design.
-
-No frameworks, no npm, no complicated setup. Just open the HTML file and it works.
+The main aim of this project was to understand how Bootstrap components work and how to combine them to build a complete website.
 
 ---
 
-## Features
+## 🛠️ Technologies Used
 
-- Navbar with username and avatar
-- Sidebar with navigation links (collapses on mobile)
-- 4 summary cards — Balance, Income, Expenses, Savings
-- Recent transactions table with Income/Expense badges
-- Add Transaction form with category dropdown
-- Responsive on mobile, tablet and desktop
-- Small custom CSS on top of Bootstrap
+* HTML5
+* CSS3
+* Bootstrap 5 (CDN)
+* Git & GitHub
 
 ---
 
-## Folder Structure
+## 📂 Project Files
 
-```
-finance-dashboard/
-│
-├── index.html
-├── css/
-│   └── style.css
-└── README.md
-```
+* `index.html` – Home page
+* `about.html` – About page
+* `contact.html` – Contact page
+* `style.css` – Custom styles
 
 ---
 
-## How to run it
+## 🎯 Development Process
 
-No setup needed honestly.
+* Started by reading Bootstrap documentation and examples
+* Created a basic layout using container, rows, and columns
+* Built a navigation bar for all pages
+* Designed the Home page with:
 
-1. Download or clone the project
-2. Open `index.html` in your browser
-3. That's it
-
----
-
-## What I found difficult
-
-- Getting the sidebar and main content to sit side by side properly took me a while
-- The sidebar collapse on mobile was confusing at first — had to read Bootstrap docs twice
-- Making the table scroll on small screens without breaking the layout
-- Keeping the cards same height using `h-100` — didn't know about that before
+  * Hero section
+  * Tool cards
+  * Categories
+* Created About page with simple feature sections
+* Developed Contact page with a form and validation
+* Added small CSS changes for better appearance
+* Tested the website on different screen sizes
 
 ---
 
-## What I learned
+## 🤖 Use of AI Tools
 
-- How Bootstrap grid system actually works (`col-12 col-sm-6 col-xl-3`)
-- Using `d-flex` for layouts instead of floats
-- `table-responsive` wrapper for mobile tables
-- Bootstrap's `collapse` component for the mobile menu
-- How small CSS changes like `border-radius` and `box-shadow` make things look cleaner
-- Writing cleaner, more readable HTML with proper spacing
+I used AI tools for guidance while building the project, mainly to:
 
----
+* Understand some Bootstrap concepts
+* Fix small errors
+* Get ideas for structuring sections
 
-## Tech used
-
-- HTML5
-- CSS3
-- Bootstrap 5 (CDN)
-- No JavaScript frameworks
+All pages and code were written and adjusted by me based on my understanding.
 
 ---
 
-## Screenshots
+## ⚠️ Challenges Faced
 
-> Will add screenshots soon — still cleaning up a few things
+* Managing layout properly using Bootstrap grid
+* Making the design responsive on mobile devices
+* Keeping the design simple but clean
 
----
+### Solution:
 
-## What I want to add later
-
-- [ ] Connect form to localStorage so data actually saves
-- [ ] Add a simple chart for monthly spending
-- [ ] Dark mode toggle
-- [ ] Filter transactions by category
+I solved these by testing frequently and referring to Bootstrap documentation.
 
 ---
 
-## Notes
+## 📈 What I Learned
 
-This project is not perfect and I know there are things to improve.
-Built this step by step while learning — so the code might not be the cleanest
-but it works and I understood everything I wrote.
-
-Feel free to use it or suggest improvements.
+* How Bootstrap grid system works
+* How to build multi-page websites
+* Importance of spacing and layout
+* Writing clean and organized code
 
 ---
 
-*Made by Alex — still learning, always building* 🚀
+## ⏱️ Time Taken
+
+Around **6 to 8 hours** to complete the project.
+
+---
+
+## 🔗 Links
+
+* GitHub Repository: (Add your link)
+* Live Website: (Add your link)
+
+---
+
+## ✅ Conclusion
+
+This project helped me improve my understanding of Bootstrap and responsive design.
+I focused on keeping the layout simple, clean, and functional while combining different components effectively.
