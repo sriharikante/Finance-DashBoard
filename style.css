@@ -1,57 +1,98 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f9fa;
+  background: #f5f7fa;
 }
 
-/* CARD */
+/* HERO */
+.hero {
+  padding: 70px 0;
+  text-align: center;
+}
+
+/* SEARCH */
+#searchInput {
+  border-radius: 30px;
+  padding: 10px 20px;
+  max-width: 500px;
+}
+
+/* FILTER BUTTONS */
+.filter-btn {
+  margin: 5px;
+}
+
+.filter-btn.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* CARDS */
 .card {
-  padding: 15px;
   border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
   border: none;
-  transition: 0.3s;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  height: 100%;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* CARD CONTENT */
+.card-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
 }
 
 /* ICON */
-.icon-big {
-  font-size: 26px;
+.card i {
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
-/* TEXT */
-.card h5 {
-  font-size: 16px;
-}
-
-.card p {
-  font-size: 13px;
-  color: #666;
-}
-
-/* BUTTON */
+/* BUTTONS */
 .btn {
   font-size: 13px;
   border-radius: 6px;
 }
 
-/* DARK MODE */
-.dark-mode {
-  background: #121212;
+.favorite-btn {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+/* BUTTON GROUP */
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* FOOTER FIX */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+}
+
+footer {
+  background: #212529;
   color: white;
-}
-
-.dark-mode .card {
-  background: #1e1e1e;
-}
-
-.dark-mode .card p {
-  color: #bbb;
-}
-
-.dark-mode .navbar {
-  background: #000 !important;
 }
